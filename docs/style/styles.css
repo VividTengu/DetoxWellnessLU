@@ -349,7 +349,7 @@ html{
 .bottom .selection .option {
     flex-basis: 20%;
     text-align: center;
-    height: 600px;
+    height: 100%;
     position: relative;
     background-color: black;
     cursor: pointer;
