@@ -261,6 +261,7 @@ html{
 .about-screen .middle{
     display: flex;
     flex-direction: row;
+    height: 140vh;
 }
 .about-screen .middle-grid{
     display: flex;
@@ -610,7 +611,6 @@ html{
         gap: 0px;
     }
     .bottom .selection .option{
-        height: 400px;
         background-color: black;
     }
     .bottom .selection .option img{
