@@ -1,0 +1,660 @@
+:root{
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Container */
+.container{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+/* Navigation */
+.nav-head{
+    width: 100%;
+    position: fixed;
+    height: 80px;
+    background-color: transparent;
+    z-index: 1;
+    display: flex;
+    z-index: 10;
+}
+.nav-head .left{
+    flex-basis: 50%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.nav-head .left ul{
+    display: flex;
+    flex-direction: row;
+}
+.nav-head .left ul li{
+    list-style-type: none;
+}
+.nav-head .left ul li a{
+}
+.nav-head .left ul li a .logo{
+    width: 130px; 
+    filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+    transition: width 1s,filter 1s;
+}
+.nav-head .left ul li a .logo:hover{
+    filter: drop-shadow(0px 0px 10px purple);
+}
+.nav-head .left ul li a .logo:active{
+    filter: drop-shadow(0px 0px 10px purple);
+}
+
+.nav-head .right{
+    flex-basis: 50%;
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav-head .right .links{
+    height: 100%;
+    padding: 10px;
+}
+.nav-head .right ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.nav-head .right ul li{
+    list-style-type: none;
+}
+.nav-head .right ul li a{
+    color: blueviolet;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 1.3rem;
+    transition: background 1s, color 1s;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    transition: font-size 1s;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+    transition: color 1s, background-color 1s;
+}
+.nav-head .right ul li a:hover{
+    background-color: blueviolet;
+    color: white;
+}
+.nav-head .right ul li a:active{
+    background-color: blueviolet;
+    color: white;
+}
+
+/* Unused Buttons */
+.nav-head .right ul li .login{
+    background: blueviolet;
+}
+.nav-head .right ul li .login:hover{
+    background: white;
+    color: blueviolet;
+}
+.nav-head .right ul li .signup{
+    background: transparent;
+    color: blueviolet;
+}
+.nav-head .right ul li .signup:hover{
+    background: white;
+    color: blueviolet;
+}
+
+/* Main Screen */
+.main-screen{
+    position: relative;
+    height: 80vh;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    background:black;
+    z-index: 0;
+}
+.main-screen .bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: 100% auto;
+    opacity: 0.3;
+    filter: blur(2px);
+    z-index: -10;
+}
+.main-screen .left{
+    width: 100%;
+    height: 100%;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    text-align: left
+}
+.main-screen .left .left-text{
+    width: 60%;
+    text-overflow: ellipsis;
+    color: white;
+    padding: 10px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main-screen .left .left-text .header-text{
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: font-size 1s;
+}
+.main-screen .left .left-text .sub-text{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    opacity: 2rem;
+    text-align: center;
+    width: 370px;
+    transition: font-size 1s;
+}
+.main-screen .left .left-text hr{
+    border: 1px solid;
+    margin-bottom: 10px;
+    width:370px
+}
+.main-screen .left .left-text .book-btn{
+    color: white;
+    background: blueviolet;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px 16px;
+    font-size: 1.2rem;
+    transition: background 1s, color 1s;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    
+    cursor: pointer;
+}
+.main-screen .left .left-text .book-btn:hover{
+    background: white;
+    color: blueviolet;
+}
+
+
+.main-screen .right{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* About Us */
+.about-screen{
+    position: relative;
+    width: 100%;
+    background: rgb(96, 25, 162);
+    box-shadow: inset 0px 0px 300px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.about-screen .top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+.about-screen .top .top-banner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.about-screen .top img{
+    width: 150px;
+    transition: filter 1s, width 1s;
+}
+.about-screen .top img:hover{
+    width: 155px;
+    filter: drop-shadow(0px 0px 5px white);
+
+}
+.about-screen .top .top-text{
+    width: 900px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.about-screen .top .top-text .header-text{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    transition: font-size 1s;
+}
+.about-screen .top .top-text .sub-text{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    opacity: 0.9;
+    transition: font-size 1s;
+    width: 600px;
+}
+.about-screen .middle{
+    display: flex;
+    flex-direction: row;
+}
+.about-screen .middle-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    overflow: hidden;
+    padding: 10px;
+}
+.about-screen .middle-grid .pic{
+    flex-basis: 50%;
+}
+.about-screen .middle-grid .pic img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    background: 100% auto;
+    transition:  1s;
+}
+.about-screen .middle-grid .text{
+    flex-basis: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.about-screen .middle-grid h1{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.8rem;
+    color: white;
+    transition: font-size 1s;
+}
+.about-screen .middle-grid p{
+    flex-basis: 70%;
+    width: 80%;
+    font-size: 1.6rem;
+    opacity: 0.9;
+    transition: font-size 1s;
+}
+
+.about-screen .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    height: 100vh;
+    position: relative;
+}
+.bottom .header-text{
+    margin-top: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: blueviolet;
+    background-color: white;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    transition: font-size 1s;
+}
+.bottom .selection{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 5px;
+    position: relative;
+}
+.bottom .selection .option {
+    flex-basis: 20%;
+    text-align: center;
+    height: 600px;
+    position: relative;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    transition: color 1s;
+    border-radius: 20px;
+    transition: height 1s;
+}
+.bottom .selection .option:hover{
+    color: transparent;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+}
+.bottom .selection .option img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.1;
+    left: 0;
+    z-index: 0;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: opacity 1s, width 1s, box-shadow 1s;
+}
+.bottom .selection .option img:hover{
+    opacity: 1.0;
+}
+.bottom .selection .option h1{
+    width: 100%;
+    bottom: 50%;
+    top: 50% ;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    font-size: 2rem;
+    font-weight: 500;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    transition: font-size 1s;
+}
+
+/* Social Screen */
+.social-screen{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background: rgb(75, 24, 122);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-screen .top{
+    position: relative;
+    flex-basis: 40%;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+.social-screen .top .header-text{
+    width: 100%;
+    font-size: 3.5rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    transition: font-size 1s;
+}
+.social-screen .bottom{
+    flex-basis: 60%;
+    padding: 10px;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+}
+.social-screen .bottom .social-links{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 10px;
+    justify-content: center;
+
+}
+.social-screen .bottom .social-links .social{
+    flex-basis: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.social-screen .bottom .social-links .social i{
+    font-size: 150px;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: color 1s, font-size 1s;
+}
+.social-screen .bottom .social-links .social a{
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.social-screen .bottom .social-links .social i:hover{
+    font-size: 160px;
+    text-shadow: 0px 0px 10px white;
+}
+
+
+
+/* Footer Screen */
+.footer-screen{
+    width: 100%;
+    height: 80px;
+    background: white;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.footer-screen .left{
+    flex-basis: 50%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+.footer-screen .left img{
+    flex-basis: 20%;
+    width: 130px;
+    filter: drop-shadow(0px 0px 1px purple);
+    transition: width 1s,filter 1s;
+    padding-right: 10px;
+}
+.footer-screen .left img:hover{
+    filter: drop-shadow(0px 0px 10px purple);
+}
+.footer-screen .left .info-text{
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid black;
+}
+.footer-screen .left .info-text div{
+    flex-basis: 33.33%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    text-overflow: ellipsis;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    transition: font-size 1s;
+}
+.footer-screen .left .info-text div p{
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.9;
+    transition: font-size 1s;
+}
+.footer-screen .right{
+    flex-basis: 50%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* Media Responsiveness */
+/* Navigation media  */
+@media (max-width: 1000px) {
+    .nav-head .left{
+        flex-basis: 20%;
+    }
+    .nav-head .right{
+        flex-basis: 80%;
+    }
+    .nav-head .right ul li a{
+        font-size: 0.8rem;
+        padding: 4px 8px;
+    }
+    .nav-head .left ul li a .logo{
+        width: 100px; 
+    } 
+}
+
+
+/* Main Screen Media */
+@media (max-width: 1000px){
+    .main-screen .left .left-text{
+        width: 80%;
+        text-overflow: ellipsis;
+        color: white;
+        padding: 10px;
+        text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    }
+    .main-screen .left .left-text .header-text{
+        font-size: 1.7rem;
+    }
+    .main-screen .left .left-text hr{
+        width: 300px;
+    }
+    .main-screen .left .left-text .sub-text{
+        font-size: 0.8rem;
+    } 
+}
+
+/* Abouts Us Media */
+@media (max-width:1000px){
+    /* Top Text */
+    .about-screen .top img{
+        width: 100px;
+    }
+    .about-screen .top img:hover{
+        width: 110px;
+    }
+    .about-screen .top .top-text{
+        width: 600px;
+    }
+    .about-screen .top .top-text .header-text{
+        text-transform: uppercase;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .about-screen .top .top-text .sub-text{
+        font-size: 0.7rem;
+        width: 350px;
+    }
+    .about-screen .middle-grid .pic img{
+        height: 400px;
+    }
+    /* Middle Text */
+    .about-screen .middle-grid h1{
+        font-size: 2rem;
+    }
+    .about-screen .middle-grid p{
+        flex-basis: 70%;
+        font-size: 0.8rem;
+        opacity: 0.9;
+    }
+    /* Bottom Text */
+    .bottom .selection{
+        flex-direction: column;
+        height: 1100px;
+        align-items: normal;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 0px;
+    }
+    .bottom .selection .option{
+        height: 400px;
+        background-color: black;
+    }
+    .bottom .selection .option img{
+        
+    }
+    .bottom .selection .option h1{
+        font-size: 1rem;
+    }
+}
+
+/* Socials Media */
+@media (max-width:1000px){
+    .social-screen{
+        height: 60vh;
+    }
+    .social-screen .top .header-text{
+        font-size: 2.5rem;
+    }
+    .social-screen .bottom .social-links .social i{
+        font-size: 100px;
+    }
+    .social-screen .bottom .social-links .social i:hover{
+        font-size: 110px;
+    }
+    .social-screen .bottom .social-links .social a{
+        font-size: 0.7rem;
+    }
+}
+
+/* Footer Media */
+@media (max-width:1000px){
+    .footer-screen .left img{
+        width: 100px; 
+    } 
+    .footer-screen .left .info-text div{
+        font-size: 20px;
+    }
+    .footer-screen .left .info-text div p{
+        font-size: 10px;
+    }
+}
+/* Font */
+body{
+    font-family: "Barlow", Tahoma;
+    font-weight: 500;
+}
