@@ -188,7 +188,7 @@ html{
     text-decoration: none;
     border: 1px solid white;
     padding: 8px 16px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     transition: background 1s, color 1s;
     cursor: pointer;
 }
@@ -286,6 +286,7 @@ html{
     margin-bottom: 40px;
     overflow: hidden;
     padding: 10px;
+    width: 100%;
 }
 .about-screen .middle-grid .pic{
     flex-basis: 50%;
@@ -393,10 +394,9 @@ html{
 .bottom .selection .option img:hover{
     opacity: 1.0;
 }
-.bottom .selection .option h1{
+.option h1{
     width: 100%;
-    bottom: 50%;
-    top: 50% ;
+    bottom: 10px;
     padding: 10px;
     position: absolute;
     z-index: 1;
@@ -557,7 +557,7 @@ html{
     }
     .nav-head .right ul li a{
         font-size: 0.6rem;
-        padding: 4px 6px;
+        padding: 2px 4px;
     }
     .nav-head .left ul li a .logo{
         width: 80px; 
@@ -583,6 +583,9 @@ html{
     .main-screen .left .left-text .sub-text{
         font-size: 0.8rem;
     } 
+    .main-screen .left .left-text .book-btn{
+        font-size: 0.8rem;
+    }
 }
 
 /* Abouts Us Media */
@@ -604,12 +607,15 @@ html{
     }
     .about-screen .top .top-text .sub-text{
         font-size: 0.7rem;
-        width: 350px;
+        width: 280px;
     }
     .about-screen .middle-grid .pic img{
         height: 500px;
     }
     /* Middle Text */
+    .about-screen .middle-grid .text{
+        padding: 10px;
+    }
     .about-screen .middle-grid h1{
         font-size: 2rem;
     }
