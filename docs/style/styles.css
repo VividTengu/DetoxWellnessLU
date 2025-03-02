@@ -556,8 +556,8 @@ html{
         flex-basis: 100%;
     }
     .nav-head .right ul li a{
-        font-size: 0.8rem;
-        padding: 4px 8px;
+        font-size: 0.6rem;
+        padding: 4px 6px;
     }
     .nav-head .left ul li a .logo{
         width: 80px; 
