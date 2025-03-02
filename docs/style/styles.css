@@ -261,7 +261,6 @@ html{
 .about-screen .middle{
     display: flex;
     flex-direction: row;
-    height: 140vh;
 }
 .about-screen .middle-grid{
     display: flex;
