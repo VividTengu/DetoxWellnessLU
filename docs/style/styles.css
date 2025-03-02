@@ -604,7 +604,6 @@ html{
     /* Bottom Text */
     .bottom .selection{
         flex-direction: column;
-        height: 1100px;
         align-items: normal;
         padding-left: 20px;
         padding-right: 20px;
