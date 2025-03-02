@@ -177,22 +177,38 @@ html{
     margin-bottom: 10px;
     width:370px
 }
+.main-screen .left .left-text .btn-seperator{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
 .main-screen .left .left-text .book-btn{
-    color: white;
-    background: blueviolet;
     text-decoration: none;
     border: 1px solid white;
     padding: 8px 16px;
     font-size: 1.2rem;
     transition: background 1s, color 1s;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-    
     cursor: pointer;
 }
-.main-screen .left .left-text .book-btn:hover{
-    background: white;
-    color: blueviolet;
+.spa{
+    background-color: #c08a5e;
+    color: white;
 }
+.spa:hover{
+    background-color: white;
+    color: #c08a5e;
+}
+.gym{
+    background-color: slategray;
+    color: white;
+}
+.gym:hover{
+    background-color: white;
+    color: slategray;
+}
+
 
 
 .main-screen .right{ 
@@ -255,12 +271,14 @@ html{
     font-size: 1.3rem;
     margin-bottom: 10px;
     opacity: 0.9;
+    text-indent: 10px;
     transition: font-size 1s;
     width: 600px;
 }
 .about-screen .middle{
     display: flex;
     flex-direction: row;
+    height: 140vh;
 }
 .about-screen .middle-grid{
     display: flex;
@@ -533,17 +551,17 @@ html{
 /* Navigation media  */
 @media (max-width: 1000px) {
     .nav-head .left{
-        flex-basis: 20%;
+        flex-basis: 0%;
     }
     .nav-head .right{
-        flex-basis: 80%;
+        flex-basis: 100%;
     }
     .nav-head .right ul li a{
         font-size: 0.8rem;
         padding: 4px 8px;
     }
     .nav-head .left ul li a .logo{
-        width: 100px; 
+        width: 80px; 
     } 
 }
 
