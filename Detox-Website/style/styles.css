@@ -46,7 +46,7 @@ html{
 .nav-head .left ul li a{
 }
 .nav-head .left ul li a .logo{
-    width: 130px; 
+    width: 160px; 
     filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
     transition: width 1s,filter 1s;
 }
@@ -177,22 +177,38 @@ html{
     margin-bottom: 10px;
     width:370px
 }
+.main-screen .left .left-text .btn-seperator{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
 .main-screen .left .left-text .book-btn{
-    color: white;
-    background: blueviolet;
     text-decoration: none;
     border: 1px solid white;
     padding: 8px 16px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     transition: background 1s, color 1s;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-    
     cursor: pointer;
 }
-.main-screen .left .left-text .book-btn:hover{
-    background: white;
-    color: blueviolet;
+.spa{
+    background-color: #c08a5e;
+    color: white;
 }
+.spa:hover{
+    background-color: white;
+    color: #c08a5e;
+}
+.gym{
+    background-color: slategray;
+    color: white;
+}
+.gym:hover{
+    background-color: white;
+    color: slategray;
+}
+
 
 
 .main-screen .right{ 
@@ -255,6 +271,7 @@ html{
     font-size: 1.3rem;
     margin-bottom: 10px;
     opacity: 0.9;
+    text-indent: 10px;
     transition: font-size 1s;
     width: 600px;
 }
@@ -269,6 +286,7 @@ html{
     margin-bottom: 40px;
     overflow: hidden;
     padding: 10px;
+    width: 100%;
 }
 .about-screen .middle-grid .pic{
     flex-basis: 50%;
@@ -316,7 +334,7 @@ html{
     flex-direction: column;
     padding-top: 10px;
     padding-bottom: 20px;
-    height: 100vh;
+    height: 80vh;
     position: relative;
 }
 .bottom .header-text{
@@ -349,7 +367,7 @@ html{
 .bottom .selection .option {
     flex-basis: 20%;
     text-align: center;
-    height: 600px;
+    height: 100%;
     position: relative;
     background-color: black;
     cursor: pointer;
@@ -376,10 +394,9 @@ html{
 .bottom .selection .option img:hover{
     opacity: 1.0;
 }
-.bottom .selection .option h1{
+.option h1{
     width: 100%;
-    bottom: 50%;
-    top: 50% ;
+    bottom: 10px;
     padding: 10px;
     position: absolute;
     z-index: 1;
@@ -533,14 +550,14 @@ html{
 /* Navigation media  */
 @media (max-width: 1000px) {
     .nav-head .left{
-        flex-basis: 20%;
+        flex-basis: 0%;
     }
     .nav-head .right{
-        flex-basis: 80%;
+        flex-basis: 100%;
     }
     .nav-head .right ul li a{
-        font-size: 0.8rem;
-        padding: 4px 8px;
+        font-size: 0.6rem;
+        padding: 2px 4px;
     }
     .nav-head .left ul li a .logo{
         width: 100px; 
@@ -566,6 +583,9 @@ html{
     .main-screen .left .left-text .sub-text{
         font-size: 0.8rem;
     } 
+    .main-screen .left .left-text .book-btn{
+        font-size: 0.8rem;
+    }
 }
 
 /* Abouts Us Media */
@@ -587,12 +607,15 @@ html{
     }
     .about-screen .top .top-text .sub-text{
         font-size: 0.7rem;
-        width: 350px;
+        width: 280px;
     }
     .about-screen .middle-grid .pic img{
-        height: 400px;
+        height: 500px;
     }
     /* Middle Text */
+    .about-screen .middle-grid .text{
+        padding: 10px;
+    }
     .about-screen .middle-grid h1{
         font-size: 2rem;
     }
@@ -604,14 +627,12 @@ html{
     /* Bottom Text */
     .bottom .selection{
         flex-direction: column;
-        height: 1100px;
         align-items: normal;
         padding-left: 20px;
         padding-right: 20px;
         gap: 0px;
     }
     .bottom .selection .option{
-        height: 400px;
         background-color: black;
     }
     .bottom .selection .option img{
